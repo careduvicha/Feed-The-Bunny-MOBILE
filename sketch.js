@@ -83,7 +83,7 @@ function setup() {
   eat.frameDelay = 40;
   sad.frameDelay = 20;
   rope = new Rope(6, { x: 245, y: 30 });
-  rope2 = new Rope(6, { x: 400, y: 20 });
+  rope2 = new Rope(6, { x:width-100, y: 20 });
   rope3 = new Rope(6, { x: 100, y: 100 });
   
   var fruit_options = { density: 0.001 };
@@ -105,7 +105,7 @@ function setup() {
   button.size(40, 40);
   button.mouseClicked(drop);
   button2 = createImg("./images/cut_button.png");
-  button2.position(400, 20);
+  button2.position(width-100, 20);
   button2.size(40, 40);
   button2.mouseClicked(drop2);
   button3 = createImg("./images/cut_button.png");
